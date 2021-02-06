@@ -18,11 +18,16 @@ member_repository.save(member1)
 member2 = Member('Adam Simpson')
 member_repository.save(member2)
 
-session1 = Session('Lower Body', 'Legs')
+member3 = Member('Louise Henderson')
+member_repository.save(member3)
+
+session1 = Session('Lower Body', 'Strength')
 session_repository.save(session1)
 
-session2 = Session('Upper Body', 'Arms')
+session2 = Session('Upper Body', 'Strength')
 session_repository.save(session2)
+
+session3 = Session('30 minute HIIT workout', '')
 
 booking1 = Booking(member1, session1, 'I have a sore leg')
 booking_repository.save(booking1)
