@@ -25,7 +25,9 @@ def new_session():
 def create_session():
     name = request.form['name']
     category = request.form['category']
-    session = Session(name, category)
+    date = request.form['date']
+    time = request.form['time']
+    session = Session(name, category, date, time)
     session_repository.save(session)
     return redirect("/sessions")
 

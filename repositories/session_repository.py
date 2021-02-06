@@ -3,8 +3,8 @@ from models.session import Session
 from models.member import Member
 
 def save(session):
-    sql = "INSERT INTO sessions(name, category) VALUES ( %s, %s ) RETURNING id"
-    values = [session.name, session.category]
+    sql = "INSERT INTO sessions(name, category, date, time) VALUES ( %s, %s, %s, %s ) RETURNING id"
+    values = [session.name, session.category, session.date, session.time]
     results = run_sql(sql, values)
     session.id = results[0]['id']
     return session
@@ -16,7 +16,7 @@ def select_all():
     results = run_sql(sql)
 
     for row in results:
-        session = Session(row['name'], row['category'], row['id'])
+        session = Session(row['name'], row['category'], row['date'], row['time'], row['id'])
         sessions.append(session)
     return sessions
 
@@ -27,7 +27,7 @@ def select(id):
     result = run_sql(sql, values)[0]
 
     if result is not None:
-        session = Session(result['name'], result['category'], result['id'])
+        session = Session(result['name'], result['category'], result['date'], result['category'], result['id'])
     return session
 
 def delete_all():

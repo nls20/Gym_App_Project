@@ -8,24 +8,33 @@
         <th>Name</th>
         <th></th>
         <th>Category</th>
+        <th></th>
+        <th>Date</th>
+        <th></th>
+        <th>Time</th>
     </tr>
     {% for session in sessions %}
     <tr>
         <td><a href="/sessions/{{ session.id }}"> {{ session.name }}</a></td>
         <td>|</td>
         <td>{{ session.category }}</td>
+        <td>|</td>
+        <td>{{ session.date }}</td>
+        <td>|</td>
+        <td>{{ session.time}}</td>
     </tr>
     {% endfor %}
 </table>
 <table>
     <p>
-        <a href="/sessions/new">New session</a>
+        <a href="/sessions/new">Create New Session</a>
     </p>
     
     <ul>
         {% for session in sessions %}
         <li>
             <p>{{session.name }}-{{session.category}}</p>
+            <p>{{session.date}}-{{session.time}}</p>
             
             <p>
                 <form action="/sessions/{{ session.id }}/delete" method="POST">

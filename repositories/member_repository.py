@@ -41,7 +41,7 @@ def sessions(member):
     results = run_sql(sql, values)
 
     for row in results:
-        session = Session(row['name'], row['category'], row['id'])
+        session = Session(row['name'], row['category'], row['date'], row['time'], row['id'])
         sessions.append(session)
     
     return sessions

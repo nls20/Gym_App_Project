@@ -11,7 +11,9 @@ CREATE TABLE members (
 CREATE TABLE sessions (
     id SERIAL PRIMARY KEY,
     name VARCHAR(255),
-    category VARCHAR(255)
+    category VARCHAR(255), 
+    date DATE,
+    time TIME
 );
 
 CREATE TABLE bookings (
