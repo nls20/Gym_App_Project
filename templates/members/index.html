@@ -18,20 +18,27 @@
         <a href="/members/new">Add New Member</a>
     </p>
     
-    <ul>
+    <!-- <ul> -->
         {% for member in members %}
-        <li>
+        <!-- <li> -->
+            <section>
             <p>{{member.name }}</p>
-            
-            <p>
+            <!-- <a href="/members/{{ member.id }}/edit">Edit</a>  -->
+               <a href="/members/{{ member.id }}/edit">Edit</a>
                 <form action="/members/{{ member.id }}/delete" method="POST">
                     <input type="submit" value="delete">
                 </form>
-            </p>
-        </li>
+            </section>
+         
+        
+        <!-- </li> -->
             
         {% endfor %}
-    </ul>
+    <!-- </ul> -->
 </table>
     
 {% endblock %}
+
+ <!-- <form action="/members/{{ member.id }}/edit" method="POST"> 
+                    <input type="submit" value="edit">
+                 </form>   -->
