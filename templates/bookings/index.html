@@ -2,10 +2,10 @@
 
 {% block content %}
 <h1>Bookings</h1>
-
+<!-- 
 {% for booking in bookings %}
     
-{% endfor %}
+{% endfor %} -->
 
 <p>
     <a href="/bookings/new">New Booking</a>
@@ -18,7 +18,7 @@
         <p>"<i>{{booking.comment}}</i>"</p>
         <p>
             <form action="/bookings/{{ booking.id }}/delete" method="POST">
-                <input class="btn btn--danger" type="submit" value="delete">
+                <input type="submit" value="delete">
             </form>
         </p>
     </li>

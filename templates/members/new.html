@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form action="/members" method="post">
+
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="name" required autofocus>
+  </div>
+
+  <button type="submit">Add New Member</button>
+
+</form>
+
+{% endblock %}
