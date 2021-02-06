@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Add a Booking</h1>
+
+<form action="/bookings" method="post">
+    <label for="member">Select a member:</label>
+     <select name="member_id" id="member">
+         {% for member in members %}
+            <option value="{{ member.id }}">{{ member.name }}</option>
+         {% endfor %}
+     </select>
+
+     <label for="session">Select a session:</label>
+     <select name="session_id" id="session">
+         {% for session in sessions %}
+            <option value="{{ session.id }}">{{ session.name }}</option>
+         {% endfor %}
+     </select>
+
+     <label for="comment">Add a Comment</label>
+     <textarea name="comment" id="comment" cols="20" rows="10"></textarea>
+     <input type='submit' value="Booking">
+
+</form>
+    
+{% endblock %}
