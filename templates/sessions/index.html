@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Bookings</h1>
+<h1>Upcoming Sessions</h1>
 
 <table>
     <tr>
@@ -16,5 +16,25 @@
         <td>{{ session.category }}</td>
     </tr>
     {% endfor %}
+</table>
+<table>
+    <p>
+        <a href="/sessions/new">New session</a>
+    </p>
+    
+    <ul>
+        {% for session in sessions %}
+        <li>
+            <p>{{session.name }}-{{session.category}}</p>
+            
+            <p>
+                <form action="/sessions/{{ session.id }}/delete" method="POST">
+                    <input type="submit" value="delete">
+                </form>
+            </p>
+        </li>
+            
+        {% endfor %}
+    </ul>
 </table>
 {% endblock %}

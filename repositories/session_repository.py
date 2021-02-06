@@ -46,3 +46,8 @@ def members(session):
         members.append(member)
 
     return members
+
+def delete(id):
+    sql = "DELETE FROM sessions WHERE id = %s"
+    values = [id]
+    run_sql(sql, values)
