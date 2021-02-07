@@ -22,10 +22,11 @@ def new_booking():
 def create_booking():
     member_id = request.form['member_id']
     session_id = request.form['session_id']
-    comment = request.form['comment']
+    date = request.form['date']
+    time = request.form['time']
     member = member_repository.select(member_id)
     session = session_repository.select(session_id)
-    booking = Booking(member, session, comment)
+    booking = Booking(member, session, date, time)
     booking_repository.save(booking)
     return redirect('/bookings')
 

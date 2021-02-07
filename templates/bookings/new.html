@@ -18,8 +18,15 @@
          {% endfor %}
      </select>
 
-     <label for="comment">Add a Comment</label>
-     <textarea name="comment" id="comment" cols="20" rows="10"></textarea>
+     <label for="date">Select a date:</label>
+    <input type="date" id="date" name="date" value="{{ session.date }}">
+    </div>
+  
+    <div>
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" value="{{ session.time }}">
+   </div>
+
      <input type='submit' value="Submit">
 
 </form>
