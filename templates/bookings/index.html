@@ -2,8 +2,8 @@
 
 {% block content %}
 <section class="bookings-container">
+    <h1>New Bookings</h1>
 <div class="create-booking-1">
-<h1>New Bookings</h1>
  <div class="new-booking">
 <p>
     <a href="/bookings/new"><button class="new-button">Create New Booking</button></a>
@@ -17,8 +17,10 @@
     {% for booking in bookings %}
     <section> 
     <li>
-        <p>{{booking.member.name }} - {{ booking.session.name }}</p>
-        <p>"<i>{{booking.date}}-{{ booking.time }}</i>"</p>
+        <p>Member Name: {{booking.member.name }} <br>
+            Session: {{ booking.session.name }}<br>
+            Date: {{booking.date}} <br>
+            Time: {{ booking.time }}</p>
         <p>
             <form action="/bookings/{{ booking.id }}/delete" method="POST">
                 <input class="new-button" type="submit" value="Delete">

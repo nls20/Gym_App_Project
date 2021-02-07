@@ -5,7 +5,7 @@ import repositories.session_repository as session_repository
 
 def save(booking):
     sql = "INSERT INTO bookings ( member_id, session_id, date, time) VALUES ( %s, %s, %s, %s) RETURNING id"
-    values = [booking.member.id, booking.session.id, booking.date, booking.date]
+    values = [booking.member.id, booking.session.id, booking.date, booking.time]
     results = run_sql( sql, values )
     booking.id = results[0]['id']
     return booking
@@ -19,7 +19,7 @@ def select_all():
     for row in results:
         member = member_repository.select(row['member_id'])
         session = session_repository.select(row['session_id'])
-        booking = Booking(member, session, row['date'], row ['date'], row['id'])
+        booking = Booking(member, session, row['date'], row ['time'], row['id'])
         bookings.append(booking)
     return bookings
 

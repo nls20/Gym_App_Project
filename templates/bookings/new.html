@@ -2,7 +2,9 @@
 
 {% block content %}
 <h1>Add a Booking</h1>
+<div class="new-booking-container">
 
+<div class="new-booking-1">
 <form action="/bookings" method="post">
     <label for="member">Select a member:</label>
      <select name="member_id" id="member">
@@ -10,25 +12,31 @@
             <option value="{{ member.id }}">{{ member.name }}</option>
          {% endfor %}
      </select>
+    </div>
 
+    <div class="new-booking-1">
      <label for="session">Select a session:</label>
      <select name="session_id" id="session">
          {% for session in sessions %}
             <option value="{{ session.id }}">{{ session.name }}</option>
          {% endfor %}
      </select>
+    </div>
 
+    <div class="new-booking-1">
      <label for="date">Select a date:</label>
     <input type="date" id="date" name="date" value="{{ session.date }}">
     </div>
+   
   
-    <div>
+   <div class="new-booking-1">
       <label for="time">Time:</label>
       <input type="time" id="time" name="time" value="{{ session.time }}">
-   </div>
+    </div>
 
      <input type='submit' value="Submit">
 
 </form>
+</div>
     
 {% endblock %}

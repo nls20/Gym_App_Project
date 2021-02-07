@@ -42,7 +42,7 @@ session_repository.save(session4)
 session5 = Session('Upper Body', 'Strength', '2021-01-17', '18:30:00')
 session_repository.save(session5)
 
-booking1 = Booking(member1, session1, session1.date, session1.time)
+booking1 = Booking(member1, session1, '2021-01-17', '18:30:00')
 booking_repository.save(booking1)
 
 booking2 = Booking(member2, session2, session2.date, session2.time)
