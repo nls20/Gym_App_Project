@@ -8,11 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
 </head>
 <body>
     <main>
     <nav>
-        <ul>
+        <ul class="main-nav">
+            <li class="background-nav">
+                <a href="/">Home</a>
+            </li>
             <li>
                 <a href="/sessions">Sessions</a>
             </li>
