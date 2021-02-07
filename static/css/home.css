@@ -1,9 +1,38 @@
- /* .background-nav a {
-    background: url('/static/images/menu/gym.jpg');
-    height: 600px;
-    background-position: center;
+.gym {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.favourite {
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gym {
+    height: auto;
+    width: 50%;
+    background-size: auto;
     background-repeat: no-repeat;
-    background-size: cover;
- } */
-/* 
-    main-nav li a */
+    background-position: center center;
+    margin: 40px;
+    padding: 40px;
+}
+  
+.gym-text h1 {
+    font-size: 3.5vw;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+    margin-top: 33px;
+    margin-bottom: 49px;
+  }
+  
+.gym-text p {
+    font-size: 2.5vw;
+    text-align: center;
+    font-weight: 400;
+    line-height: .5;
+    color: black;
+    margin-bottom: 5;
+  }

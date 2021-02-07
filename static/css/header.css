@@ -1,6 +1,6 @@
 .main-nav {
     display: flex;
-    background-color: royalblue;
+    background-color: rgba(255, 255, 255, 0.5);
   }
 
 .main-nav li {
