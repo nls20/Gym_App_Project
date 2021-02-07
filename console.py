@@ -21,13 +21,26 @@ member_repository.save(member2)
 member3 = Member('Louise Henderson')
 member_repository.save(member3)
 
-session1 = Session('Lower Body', 'Strength', '2021-12-21', '06:00:00')
+member4 = Member('Anna Reid')
+member_repository.save(member4)
+
+member5 = Member('Ellie Jones')
+member_repository.save(member5)
+
+session1 = Session('Lower Body HIIT', 'Cardio', '2021-01-14', '06:00:00')
 session_repository.save(session1)
 
-session2 = Session('Upper Body', 'Strength', '2021-12-21', '06:00:00')
+session2 = Session('Kettlebells', 'Strength', '2021-01-15', '07:30:00')
 session_repository.save(session2)
 
-# session3 = Session('30 minute HIIT workout', 2021-12-21)
+session3 = Session('Unwind', 'Stretch', '2021-01-16', '09:00:00')
+session_repository.save(session3)
+
+session4 = Session('Ab & Core Blitz', 'Tone', '2021-01-16', '18:00:00')
+session_repository.save(session4)
+
+session5 = Session('Upper Body', 'Strength', '2021-01-17', '18:30:00')
+session_repository.save(session5)
 
 booking1 = Booking(member1, session1, 'I have a sore leg')
 booking_repository.save(booking1)
