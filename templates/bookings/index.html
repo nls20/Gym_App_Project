@@ -1,28 +1,40 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<section class="bookings-container">
+<div class="create-booking-1">
 <h1>Bookings</h1>
-<!-- 
-{% for booking in bookings %}
-    
-{% endfor %} -->
-
+ <div class="new-booking">
 <p>
-    <a href="/bookings/new">New Booking</a>
+    <a href="/bookings/new"><button class="new-button">Create New Booking</button></a>
 </p>
+</div>
+</div>
 
+<div class="create-booking-2">
 <ul>
     {% for booking in bookings %}
+    <section> 
+        <h1>Bookings</h1>
     <li>
         <p>{{booking.member.name }} - {{ booking.session.name }}</p>
         <p>"<i>{{booking.comment}}</i>"</p>
         <p>
+            <div class="delete-button">
             <form action="/bookings/{{ booking.id }}/delete" method="POST">
-                <input type="submit" value="delete">
+                <input class="delete-button" type="submit" value="Delete">
             </form>
+         
+   
         </p>
     </li>
         
     {% endfor %}
 </ul>
+</div>
+</div>
+</section>
+</section>
 {% endblock %}
+
+
