@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<section class="members-container">
+<div class="create-member-1">
 <h1>Members</h1>
 
 <table>
     <tr>
-        <th>Name</th>
+        <th>Active Members</th>
     </tr>
     {% for member in members %}
     <tr>
@@ -13,10 +15,13 @@
     </tr>
     {% endfor %}
 </table>
+</div>
+<div class="create-member-2">
 <table>
     <p>
         <a href="/members/new">Add New Member</a>
     </p>
+
     
   
         {% for member in members %}
@@ -33,6 +38,8 @@
         {% endfor %}
    
 </table>
+</div>
+</section>
     
 {% endblock %}
 

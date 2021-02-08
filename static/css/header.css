@@ -19,4 +19,7 @@
     font-size: 20px;
 }
 
+.main-nav a:hover {
+    background-color: gray;
+}
   

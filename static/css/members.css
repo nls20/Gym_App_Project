@@ -1,0 +1,41 @@
+.members-container {
+    max-width: 1300px;
+    margin: 40px auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.create-member-1 {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color:rgba(64, 224, 208, 0.26);
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    flex-basis: 40%;
+   
+}
+
+.create-member-1 h1 {
+    color: black;
+    text-shadow: 0 0 3px white;
+    font-size: 4.0vw;
+    text-align: center;
+    font-weight: 700;
+}
+
+.create-member-2 {
+    padding: 5px;
+    font-size: 25px;
+    color: white;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: rgba(64, 224, 208, 0.26);
+    text-shadow: 0 0 3px black;
+    flex-basis: 40%;
+}

@@ -16,7 +16,7 @@
     </tr>
     {% for session in sessions %}
     <tr>
-        <td><a href="/sessions/{{ session.id }}"> {{ session.name }}</a></td>
+        <td><button class="table-name-button"><a href="/sessions/{{ session.id }}"> {{ session.name }}</a></button></td>
         <!-- <td></td> -->
         <td>{{ session.category }}</td>
         <!-- <td></td> -->

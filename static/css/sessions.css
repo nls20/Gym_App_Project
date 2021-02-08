@@ -63,6 +63,33 @@
     text-align: center;
 }
 
+.create-session-2-button:hover{
+    background-color: gray;
+}
+
+
+.table-name-button {
+    background-color: #60B99A;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 16px 20px;
+    text-decoration: none;
+    margin: 4px 4px;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+.table-name-button a{
+    color: white;
+    text-decoration: none;
+}
+
+.table-name-button:hover {
+    background-color: gray;
+}
+
 .create-session-button-small {
     margin: 10px;
     background: #60B99A;
@@ -75,6 +102,10 @@
     text-decoration: none;
     justify-self: center;
     border: none;
+}
+
+.create-session-button-small:hover {
+    background-color: gray;
 }
 
 
@@ -106,7 +137,7 @@
 }
 
 #name {
-    width: 150px;
+    width: 160px;
 }
 
 #category {
