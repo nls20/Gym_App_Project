@@ -4,24 +4,24 @@
 <div class="create-session-container">
 <section class="create-session-1">
 <h1>Upcoming Sessions</h1>
-<table>
+<table class="session-table">
     <tr>
-        <th>Name</th>
-        <th></th>
+        <th id="name">Name</th>
+        <!-- <th></th> -->
         <th>Category</th>
-        <th></th>
+        <!-- <th></th> -->
         <th>Date</th>
-        <th></th>
+        <!-- <th></th> -->
         <th>Time</th>
     </tr>
     {% for session in sessions %}
     <tr>
         <td><a href="/sessions/{{ session.id }}"> {{ session.name }}</a></td>
-        <td>|</td>
+        <!-- <td></td> -->
         <td>{{ session.category }}</td>
-        <td>|</td>
+        <!-- <td></td> -->
         <td>{{ session.date }}</td>
-        <td>|</td>
+        <!-- <td></td> -->
         <td>{{ session.time}}</td>
     </tr>
     {% endfor %}

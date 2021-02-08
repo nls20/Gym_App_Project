@@ -1,5 +1,4 @@
 .bookings-container {
-
     max-width: 1300px;
     margin: 40px auto 0 auto;
     line-height: 1.65;
@@ -19,6 +18,7 @@
     font-weight: 600;
     color: black;
     text-align: center;
+    flex:1;
 }
 
 .create-booking-1 h1 {
@@ -38,6 +38,7 @@
     flex-basis: 40%;
     background-color: rgba(64, 224, 208, 0.26);
     text-shadow: 0 0 3px black;
+    flex: 0;
 }
 
 .create-booking-2 h1 {

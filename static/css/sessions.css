@@ -2,7 +2,7 @@
     max-width: 1300px;
     margin: 40px auto 0 auto;
     line-height: 1.65;
-    padding: 20px 50px;
+    padding: 20px 60px;
     display: flex;
     flex-wrap: wrap;
     flex-basis:40%;
@@ -45,3 +45,34 @@
 .create-session-2 li {
     list-style-type: none;
  }
+
+.session-table {
+    table-layout: fixed;
+    width: 550px;
+    /* border: 3px solid white; */
+    border-spacing: 0.5rem;
+    border-collapse: collapse;
+    text-align: centre;
+}
+
+.session-table tr {
+    background-color: rgba(255, 255, 255, 0.7);
+    /* border: 1px solid #ddd; */
+    padding: .35em;
+}
+
+.session-table td, th {
+    border: 1px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0.5em;
+    }
+
+.session-table td, a {
+    color: black;
+}
+
+#name {
+    width: 150px;
+}
