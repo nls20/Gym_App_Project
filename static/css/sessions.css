@@ -1,18 +1,4 @@
 .create-session-container {
-    /* max-width: 1300m; */
-    /* margin: 40px auto 0 auto; */
-    /* line-height: 1.65; */
-    /* padding: 20px 60px; */
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-basis:100%; */
-    /* height: auto;
-    width: 100%;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center center;
-    margin: 40px;
-    padding: 60px; */
     position:relative;
     display: flex;
     flex-wrap: wrap;
@@ -27,24 +13,7 @@
     font-size: 2.0vw;
     font-weight: 600;
     color: black;
-    /* text-align: center; */
 }
-
-/* .create-session-2 {
-    padding: 20px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    background-color: rgba(64, 224, 208, 0.26);
-    font-size: 1.5vw;
-    font-weight: 600;
-    color: white;
-    text-align: left;
-    flex-grow: 0.5;
-} */
-
-/* .create-session-2 a {
-    text-decoration: none;
-} */
 
 .create-session-1 h1 {
     color: black;
@@ -54,29 +23,6 @@
     text-shadow: 0 0 3px white;
 }
 
-/* .create-session-2 li {
-    list-style-type: none;
- } */
-
- /* .create-session-2-button a {
-    background-color: #60B99A;
-    border: none;
-    color: white;
-    font-size: 20px;
-    padding: 16px 20px;
-    text-decoration: none;
-    margin: 4px 4px;
-    cursor: pointer;
-    font-family: 'Roboto Condensed', sans-serif;
-
-} */
-
-
-/* .create-session-2-button a:hover{
-    background-color: gray;
-}  */
-
-
 .table-name-button {
     background-color: #60B99A;
     border: none;
@@ -84,7 +30,6 @@
     font-size: 20px;
     padding: 16px 20px;
     text-decoration: none;
-    /* margin: 4px 4px; */
     cursor: pointer;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
@@ -143,7 +88,6 @@
 .session-table {
     table-layout: fixed;
     width: 1000px;
-    /* border: 3px solid white; */
     border-spacing: 0.5rem;
     border-collapse: collapse;
     text-align: left;
@@ -151,7 +95,6 @@
 
 .session-table tr {
     background-color: rgba(255, 255, 255, 0.5);
-    /* border: 1px solid #ddd; */
     padding: .35em;
 }
 
@@ -188,4 +131,44 @@
 
 #delete {
     width: 100px;
+}
+
+
+.new-session-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: none;
+    row-gap: 1em;
+    display:flex;
+    column-gap: 20px;
+}
+
+.new-session-1 {
+    background-color: lime;
+    flex: auto;
+    padding: 30px;
+    font-size: 2.5vw;
+    font-weight: 600;
+}
+
+
+.new-member-button {
+
+    /* background-color: #60B99A;
+    border: none;
+    color: white;
+    font-size: 25px;
+    padding: 20px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+} */
+
+.new-booking-member:hover {
+/* background-color: gray; */
+}
+
+#member-name {
+    width: 50px;
 }
