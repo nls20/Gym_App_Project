@@ -34,6 +34,10 @@
     flex-grow: 0.5;
 }
 
+.create-session-2 a {
+    text-decoration: none;
+}
+
 .create-session-container h1 {
     color: black;
     font-size: 4.0vw;
@@ -45,6 +49,34 @@
 .create-session-2 li {
     list-style-type: none;
  }
+
+ .create-session-2-button {
+    background-color: #60B99A;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 16px 20px;
+    text-decoration: none;
+    margin: 4px 4px;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+.create-session-button-small {
+    margin: 10px;
+    background: #60B99A;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    justify-self: center;
+    border: none;
+}
+
 
 .session-table {
     table-layout: fixed;
@@ -75,4 +107,12 @@
 
 #name {
     width: 150px;
+}
+
+#category {
+    width: 120px;
+}
+
+#date {
+    width: 100px;
 }

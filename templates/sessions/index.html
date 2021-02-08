@@ -8,9 +8,9 @@
     <tr>
         <th id="name">Name</th>
         <!-- <th></th> -->
-        <th>Category</th>
+        <th id="category">Category</th>
         <!-- <th></th> -->
-        <th>Date</th>
+        <th id="date">Date</th>
         <!-- <th></th> -->
         <th>Time</th>
     </tr>
@@ -30,7 +30,7 @@
 <section class="create-session-2">
 <table>
     <p>
-        <a href="/sessions/new">Create New Session</a>
+        <a class="create-session-2-button" href="/sessions/new">Create New Session</a>
         <!-- <a href="/sessions/upcoming">See upcoming sessions</a> -->
     </p>
 </div>
@@ -43,9 +43,9 @@
             <p>{{session.date}}-{{session.time}}</p>
             
             <p>
-                <a href="/sessions/{{ session.id }}/edit"><button>Edit</button></a>
+                <a href="/sessions/{{ session.id }}/edit"><button class ="create-session-button-small">Edit</button></a>
                 <form action="/sessions/{{ session.id }}/delete" method="POST">
-                    <input type="submit" value="Delete">
+                    <input class="create-session-button-small" type="submit" value="Delete">
                 </form>
             </p>
         </li>
