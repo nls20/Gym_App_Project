@@ -6,4 +6,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    /* display: grid; */
+    /* justify-content: center; */
+    /* align-items: center;  */
     }

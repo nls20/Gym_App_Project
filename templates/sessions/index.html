@@ -4,6 +4,15 @@
 <div class="create-session-container">
 <section class="create-session-1">
 <h1>Upcoming Sessions</h1>
+<!-- <section class="create-session-2"> -->
+    <table>
+        <p>
+            <!-- <div class="create-session-2-button"> -->
+            <a href="/sessions/new">Create New Session</a>
+            <!-- <a href="/sessions/upcoming">See upcoming sessions</a> -->
+        <!-- </div> -->
+        </p>
+    </div>
 <table class="session-table">
     <tr>
         <th id="name">Name</th>
@@ -13,6 +22,8 @@
         <th id="date">Date</th>
         <!-- <th></th> -->
         <th>Time</th>
+        <th></th>
+        <th></th>
     </tr>
     {% for session in sessions %}
     <tr>
@@ -23,35 +34,46 @@
         <td>{{ session.date }}</td>
         <!-- <td></td> -->
         <td>{{ session.time}}</td>
+        <td><a href="/sessions/{{ session.id }}/edit"><button class ="create-session-button-small">Edit</button></a></td>
+        <td><form action="/sessions/{{ session.id }}/delete" method="POST">
+            <input class="create-session-button-small" type="submit" value="Delete">
+        </form></td>
     </tr>
     {% endfor %}
+    <!-- <a href="/sessions/{{ session.id }}/edit"><button class ="create-session-button-small">Edit</button></a>
+            <form action="/sessions/{{ session.id }}/delete" method="POST">
+                <input class="create-session-button-small" type="submit" value="Delete">
+            </form> -->
 </table>
 </section>
-<section class="create-session-2">
+<!-- <section class="create-session-2">
 <table>
     <p>
-        <a class="create-session-2-button" href="/sessions/new">Create New Session</a>
+        <div class="create-session-2-button">
+        <a href="/sessions/new">Create New Session</a>
         <!-- <a href="/sessions/upcoming">See upcoming sessions</a> -->
+    <!-- </div>
     </p>
-</div>
+</div> --> -->
 
      
-    <ul>
-        {% for session in sessions %}
-        <li>
-            <p>{{session.name }}-{{session.category}}</p>
-            <p>{{session.date}}-{{session.time}}</p>
+<!--     
+    {% for session in sessions %} -->
+        <!-- <ul>
+            <li>Session Name: {{session.name }}</li>
+            <li>Category: {{session.category}}</li>
+            <li>Date: {{session.date}}</li>
+            <li>Time: {{session.time}}</li> -->
             
-            <p>
-                <a href="/sessions/{{ session.id }}/edit"><button class ="create-session-button-small">Edit</button></a>
-                <form action="/sessions/{{ session.id }}/delete" method="POST">
-                    <input class="create-session-button-small" type="submit" value="Delete">
-                </form>
-            </p>
-        </li>
+            <!-- <a href="/sessions/{{ session.id }}/edit"><button class ="create-session-button-small">Edit</button></a>
+            <form action="/sessions/{{ session.id }}/delete" method="POST">
+                <input class="create-session-button-small" type="submit" value="Delete">
+            </form> -->
+        <!-- </ul>
+         -->
             
-        {% endfor %}
-    </ul>
+        <!-- {% endfor %} -->
+   
 </table>
 </section>
 </div>

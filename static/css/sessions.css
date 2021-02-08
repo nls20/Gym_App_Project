@@ -1,13 +1,22 @@
 .create-session-container {
-    max-width: 1300px;
-    margin: 40px auto 0 auto;
-    line-height: 1.65;
-    padding: 20px 60px;
+    /* max-width: 1300m; */
+    /* margin: 40px auto 0 auto; */
+    /* line-height: 1.65; */
+    /* padding: 20px 60px; */
+    /* display: flex;
+    flex-wrap: wrap;
+    flex-basis:100%; */
+    /* height: auto;
+    width: 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 40px;
+    padding: 60px; */
+    position:relative;
     display: flex;
     flex-wrap: wrap;
-    flex-basis:40%;
-    justify-content:space-around;
-
+    justify-content: space-evenly;
 }
 
 .create-session-1 {
@@ -18,19 +27,18 @@
     font-size: 1.5vw;
     font-weight: 600;
     color: black;
-    text-align: center;
-    flex-grow: 0;
+    /* text-align: center; */
 }
 
-.create-session-2 {
+/* .create-session-2 {
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 20px;
     background-color: rgba(64, 224, 208, 0.26);
     font-size: 1.5vw;
     font-weight: 600;
-    color: black;
-    text-align: center;
+    color: white;
+    text-align: left;
     flex-grow: 0.5;
 }
 
@@ -50,7 +58,7 @@
     list-style-type: none;
  }
 
- .create-session-2-button {
+ .create-session-2-button a {
     background-color: #60B99A;
     border: none;
     color: white;
@@ -60,12 +68,13 @@
     margin: 4px 4px;
     cursor: pointer;
     font-family: 'Roboto Condensed', sans-serif;
-    text-align: center;
+
 }
 
-.create-session-2-button:hover{
+
+.create-session-2-button a:hover{
     background-color: gray;
-}
+} */
 
 
 .table-name-button {
@@ -75,10 +84,13 @@
     font-size: 20px;
     padding: 16px 20px;
     text-decoration: none;
-    margin: 4px 4px;
+    /* margin: 4px 4px; */
     cursor: pointer;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
+    justify-content: center;
+    position: relative;
+   
 }
 
 .table-name-button a{
@@ -111,7 +123,7 @@
 
 .session-table {
     table-layout: fixed;
-    width: 550px;
+    width: 1000px;
     /* border: 3px solid white; */
     border-spacing: 0.5rem;
     border-collapse: collapse;
