@@ -1,0 +1,47 @@
+.create-session-container {
+    max-width: 1300px;
+    margin: 40px auto 0 auto;
+    line-height: 1.65;
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis:40%;
+    justify-content:space-around;
+
+}
+
+.create-session-1 {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color:rgba(64, 224, 208, 0.26);
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    flex-grow: 0;
+}
+
+.create-session-2 {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color: rgba(64, 224, 208, 0.26);
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    flex-grow: 0.5;
+}
+
+.create-session-container h1 {
+    color: black;
+    font-size: 4.0vw;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 0 3px white;
+}
+
+.create-session-2 li {
+    list-style-type: none;
+ }

@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<div class="create-session-container">
+<section class="create-session-1">
 <h1>Upcoming Sessions</h1>
-
 <table>
     <tr>
         <th>Name</th>
@@ -25,12 +26,16 @@
     </tr>
     {% endfor %}
 </table>
+</section>
+<section class="create-session-2">
 <table>
     <p>
         <a href="/sessions/new">Create New Session</a>
         <!-- <a href="/sessions/upcoming">See upcoming sessions</a> -->
     </p>
-    
+</div>
+
+     
     <ul>
         {% for session in sessions %}
         <li>
@@ -48,4 +53,6 @@
         {% endfor %}
     </ul>
 </table>
+</section>
+</div>
 {% endblock %}
