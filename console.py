@@ -50,5 +50,7 @@ booking_repository.save(booking2)
 
 print(member_repository.sessions(member1))
 print(session_repository.members(session1))
+member1.name='Malcolm'
+member_repository.update(member1)
 
 pdb.set_trace()

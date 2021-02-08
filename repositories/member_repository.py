@@ -51,8 +51,11 @@ def delete(id):
     values = [id]
     run_sql(sql, values)
 
+    
+
 def update(member):
-    sql = "UPDATE members SET (name) = (%s) WHERE id = %s"
+    sql = "UPDATE members SET name = %s WHERE id = %s"
     values = [member.name, member.id]
     print(values)
     run_sql(sql, values)
+    print(member.id)
