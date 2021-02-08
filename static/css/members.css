@@ -85,6 +85,10 @@
     border: none;
 }
 
+.create-new-member-button:hover {
+    background-color: gray;
+}
+
 #name {
     width:500px;
 }
