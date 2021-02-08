@@ -29,7 +29,7 @@
     font-weight: 700;
 }
 
-.create-member-2 {
+/* .create-member-2 {
     padding: 5px;
     font-size: 25px;
     color: white;
@@ -38,4 +38,53 @@
     background-color: rgba(64, 224, 208, 0.26);
     text-shadow: 0 0 3px black;
     flex-basis: 40%;
+} */
+
+
+.member-table {
+    table-layout: fixed;
+    width: 1000px;
+    /* border: 3px solid white; */
+    border-spacing: 0.5rem;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.member-table tr {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* border: 1px solid #ddd; */
+    padding: .35em;
+}
+
+.member-table td, th {
+    border: 1px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0.5em;
+    text-align: left;
+    }
+
+.member-table td, a {
+    color: black;
+    text-decoration: none;
+
+} 
+
+.create-new-member-button {
+    margin-bottom: 30px;
+    background: #60B99A;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    justify-self: center;
+    align-content: center;
+    border: none;
+}
+
+#name {
+    width:500px;
 }

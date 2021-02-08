@@ -24,7 +24,7 @@
     box-sizing: border-box;
     margin-bottom: 20px;
     background-color:rgba(64, 224, 208, 0.26);
-    font-size: 1.5vw;
+    font-size: 2.0vw;
     font-weight: 600;
     color: black;
     /* text-align: center; */
@@ -40,13 +40,13 @@
     color: white;
     text-align: left;
     flex-grow: 0.5;
-}
+} */
 
-.create-session-2 a {
+/* .create-session-2 a {
     text-decoration: none;
-}
+} */
 
-.create-session-container h1 {
+.create-session-1 h1 {
     color: black;
     font-size: 4.0vw;
     font-weight: 700;
@@ -54,11 +54,11 @@
     text-shadow: 0 0 3px white;
 }
 
-.create-session-2 li {
+/* .create-session-2 li {
     list-style-type: none;
- }
+ } */
 
- .create-session-2-button a {
+ /* .create-session-2-button a {
     background-color: #60B99A;
     border: none;
     color: white;
@@ -69,12 +69,12 @@
     cursor: pointer;
     font-family: 'Roboto Condensed', sans-serif;
 
-}
-
-
-.create-session-2-button a:hover{
-    background-color: gray;
 } */
+
+
+/* .create-session-2-button a:hover{
+    background-color: gray;
+}  */
 
 
 .table-name-button {
@@ -120,6 +120,25 @@
     background-color: gray;
 }
 
+.create-new-session-button {
+    margin-left: 500px;
+    margin-bottom: 30px;
+    background: #60B99A;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    justify-self: center;
+    align-content: center;
+    border: none;
+}
+
+.create-new-session-button:hover {
+    background-color: gray;
+}
+
 
 .session-table {
     table-layout: fixed;
@@ -127,11 +146,11 @@
     /* border: 3px solid white; */
     border-spacing: 0.5rem;
     border-collapse: collapse;
-    text-align: centre;
+    text-align: left;
 }
 
 .session-table tr {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.5);
     /* border: 1px solid #ddd; */
     padding: .35em;
 }
@@ -142,20 +161,31 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     padding: 0.5em;
+    text-align: left;
     }
 
 .session-table td, a {
     color: black;
-}
+    text-decoration: none;
+
+} 
 
 #name {
-    width: 160px;
+    width: 200px;
 }
 
 #category {
-    width: 120px;
+    width: 160px;
 }
 
 #date {
+    width: 150px;
+}
+
+#edit {
+    width: 100px;
+}
+
+#delete {
     width: 100px;
 }

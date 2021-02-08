@@ -4,35 +4,25 @@
 <div class="create-session-container">
 <section class="create-session-1">
 <h1>Upcoming Sessions</h1>
-<!-- <section class="create-session-2"> -->
     <table>
         <p>
-            <!-- <div class="create-session-2-button"> -->
-            <a href="/sessions/new">Create New Session</a>
-            <!-- <a href="/sessions/upcoming">See upcoming sessions</a> -->
-        <!-- </div> -->
+            <a class="create-new-session-button" href="/sessions/new">Create New Session</a>
         </p>
     </div>
 <table class="session-table">
     <tr>
-        <th id="name">Name</th>
-        <!-- <th></th> -->
-        <th id="category">Category</th>
-        <!-- <th></th> -->
-        <th id="date">Date</th>
-        <!-- <th></th> -->
-        <th>Time</th>
-        <th></th>
-        <th></th>
+        <th id="name">NAME</th>
+        <th id="category">CATEGORY</th>
+        <th id="date">DATE</th>
+        <th>TIME</th>
+        <th id="edit"></th>
+        <th id="delete"></th>
     </tr>
     {% for session in sessions %}
     <tr>
         <td><button class="table-name-button"><a href="/sessions/{{ session.id }}"> {{ session.name }}</a></button></td>
-        <!-- <td></td> -->
         <td>{{ session.category }}</td>
-        <!-- <td></td> -->
         <td>{{ session.date }}</td>
-        <!-- <td></td> -->
         <td>{{ session.time}}</td>
         <td><a href="/sessions/{{ session.id }}/edit"><button class ="create-session-button-small">Edit</button></a></td>
         <td><form action="/sessions/{{ session.id }}/delete" method="POST">
@@ -40,10 +30,7 @@
         </form></td>
     </tr>
     {% endfor %}
-    <!-- <a href="/sessions/{{ session.id }}/edit"><button class ="create-session-button-small">Edit</button></a>
-            <form action="/sessions/{{ session.id }}/delete" method="POST">
-                <input class="create-session-button-small" type="submit" value="Delete">
-            </form> -->
+   
 </table>
 </section>
 <!-- <section class="create-session-2">

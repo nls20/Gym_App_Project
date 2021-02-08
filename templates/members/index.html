@@ -4,26 +4,33 @@
 <section class="members-container">
 <div class="create-member-1">
 <h1>Members</h1>
+<p>
+    <a class="create-new-member-button" href="/members/new">Add New Member</a>
+</p>
 
-<table>
+<table class="member-table">
     <tr>
-        <th>Active Members</th>
+        <th id="name">Active Members</th>
+        <th id="delete"></th>
+        <th id="edit"></th>
     </tr>
     {% for member in members %}
     <tr>
-        <td><a href="/members/{{ member.id }}">{{ member.name }}</a></td>
+        <td> <button class="table-name-button"> <a href="/members/{{ member.id }}">{{ member.name }}</a></button></td>
+        <td><a href="/members/{{ member.id }}/edit"><button class ="create-session-button-small">Edit</button></a></td>
+        <td><form action="/members/{{ member.id }}/delete" method="POST"><input class="create-session-button-small" type="submit" value="Delete"></form></td>
     </tr>
     {% endfor %}
+
+
+
 </table>
 </div>
-<div class="create-member-2">
-<table>
-    <p>
-        <a href="/members/new">Add New Member</a>
-    </p>
-
+<!-- <div class="create-member-2">
+<table> -->
     
-  
+    
+<!--   
         {% for member in members %}
        
             <section>
@@ -37,8 +44,8 @@
             
         {% endfor %}
    
-</table>
-</div>
+</table> -->
+<!-- </div> -->
 </section>
     
 {% endblock %}
