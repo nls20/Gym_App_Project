@@ -1,22 +1,23 @@
 .main-nav {
     display: flex;
     background-color: rgba(255, 255, 255, 0.5);
+    justify-content: space-evenly;
   }
 
 .main-nav li {
     list-style: none;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 .main-nav a {
-    margin: 20px;
+    margin: 20px auto;
     border-radius: 20px;
     background: #60B99A;
     color: #fff;
     display: block;
     padding: 30px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .main-nav a:hover {

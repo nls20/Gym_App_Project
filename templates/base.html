@@ -13,28 +13,38 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/bookings.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/sessions.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/members.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+  
 </head>
 <body>
+    <div id="container">
+        <div id="content-wrap">
     <main>
     <nav>
         <ul class="main-nav">
             <li class="background-nav">
-                <a href="/">Home</a>
+                <a href="/">HOME</a>
             </li>
             <li>
-                <a href="/sessions">Sessions</a>
+                <a href="/sessions">SESSIONS</a>
             </li>
             <li>
-                <a href="/members">Members Area</a>
+                <a href="/members">MEMBERS AREA</a>
             </li>
             <li>
-                <a href="/bookings">Bookings</a>
+                <a href="/bookings">BOOKINGS</a>
             </li>
         </ul>
     </nav>
     {% block content %}
         
     {% endblock %}
+   </div>
+  
 </main>
+</div>
+<footer class="container-row">
+ <p> © 2021 The Gym in Edinburgh.  All Rights Reserved.</p>
+</footer>
 </body>
 </html>
