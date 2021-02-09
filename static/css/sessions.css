@@ -122,11 +122,11 @@
 }
 
 .table-header-date {
-    width: 150px;
+    width: 200px;
 } 
 
 .table-header-time  {
-    width: 150px;
+    width: 200px;
 }
 
 .table-header-edit {
@@ -138,21 +138,39 @@
 }
 
 .new-session-container {
+    text-align: center;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    background-color: none;
+    grid-template-columns: (4, 3fr);
     row-gap: 1em;
-    display:flex;
-    column-gap: 20px;
+    display: flex;
+    column-gap:20px;
+    justify-content: space-evenly;
+    max-width: 2000px;
 }
 
 .new-session-1 {
-    background-color: lime;
-    flex: auto;
-    padding: 30px;
-    font-size: 2.5vw;
+    height: auto;
+    width: 500px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    font-size: 26px;
     font-weight: 600;
+    text-shadow: 0 0 5px black;
+    margin-bottom: 40px;
+    background-color: rgba(64, 224, 208, 0.26); 
+    color:white;
 }
+
+.add-session h1 {
+    color: black;
+    text-shadow: 0 0 3px white;
+    font-size: 4.0vw;
+    text-align: center;
+    font-weight: 700;
+    padding: 20px;
+    margin: 0;
+}
+
 
 #member-name {
     width: 100px;

@@ -4,37 +4,34 @@
 <section class="bookings-container">
 <div class="create-booking-1">
     <h1>New Bookings</h1>
- <div class="new-booking">
+<table>
+ <!-- <div class="new-booking"> -->
 <p>
     <a href="/bookings/new"><button class="new-button">Create New Booking</button></a>
 </p>
 </div>
-</div>
-
-<div class="create-booking-2">
-    <h1>Bookings</h1>
-<ul>
+<table class="booking-table">
+<!-- <div class="create-booking-2"> -->
+    <tr>
+        <th class="table-header-name">NAME</th>
+        <th class="table-header-category">SESSION</th>
+        <th class="table-header-date">DATE</th>
+        <th class="table-header-time">TIME</th>
+        <th class="table-header-delete"></th>
+    </tr>
     {% for booking in bookings %}
-    <section> 
-    <li>
-        <p>Member Name: {{booking.member.name }} <br>
-            Session: {{ booking.session.name }}<br>
-            Date: {{booking.date}} <br>
-            Time: {{ booking.time }}</p>
-        <p>
-            <form action="/bookings/{{ booking.id }}/delete" method="POST">
-                <input class="new-button" type="submit" value="Delete">
-            </form>
-         
-   
-        </p>
-    </li>
+    <tr>
+        <td>{{booking.member.name }} </td>
+        <td>{{ booking.session.name }}</td>
+        <td> {{booking.date}} </td>
+        <td>{{ booking.time }}</td>
+        <td><form action="/bookings/{{ booking.id }}/delete" method="POST">
+            <input class="new-button" type="submit" value="Delete">
+        </form></td>
+    </tr>
         
     {% endfor %}
-</ul>
-</div>
-</div>
-</section>
+</table>
 </section>
 {% endblock %}
 

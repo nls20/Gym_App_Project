@@ -1,16 +1,20 @@
 .bookings-container {
-    max-width: 1300px;
+    /* max-width: 1300px;
     margin: 40px auto 0 auto;
     line-height: 1.65;
     padding: 20px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; */
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .create-booking-1 {
-    padding: 20px;
+    /* padding: 20px;
     box-sizing: border-box;
     margin-bottom: 20px;
     background-color: rgba(64, 224, 208, 0.26); 
@@ -18,41 +22,25 @@
     font-weight: 600;
     color: black;
     text-align: center;
-    flex-basis: 40%;
+    flex-basis: 40%; */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color:rgba(64, 224, 208, 0.26);
+    font-size: 2.0vw;
+    font-weight: 600;
+    color: black;
    
 }
 
 .create-booking-1 h1 {
     color: black;
-    text-shadow: 0 0 3px white;
-    font-size: 4.0vw;
-    text-align: center;
-    font-weight: 700;
-}
-
-.create-booking-2 {
-    padding: 5px;
-    font-size: 25px;
-    color: white;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    background-color:  rgba(64, 224, 208, 0.26); 
-    text-shadow: 0 0 3px black;
-    flex-basis: 40%;
-}
-
-.create-booking-2 h1 {
-    color: black;
     font-size: 4.0vw;
     font-weight: 700;
     text-align: center;
     text-shadow: 0 0 3px white;
-
 }
 
-.create-booking-2 li {
-   list-style-type: none;
-}
 
 .new-booking a {
     color: white;
@@ -85,14 +73,6 @@
 
 .new-booking-container {
         max-width: 2000px; 
-        /* margin: 40px auto 0 auto;
-        line-height: 1.65;
-        padding: 20px 50px;
-        position:absolute; */
-        /* flex-flow: row wrap;
-        flex-direction: row;
-        align-content: space-between;
-        justify-content: space-between; */
         text-align: center;
         display: grid;
         grid-template-columns: (4, 3fr);
@@ -115,14 +95,6 @@
     background-color: rgba(64, 224, 208, 0.26); 
     color:white;
 }
-
-.new-booking-1-last {
-    background-color: none;
-    flex-grow: 5;
-    margin-left: 590px;
-
-}  
-
 
 .new-booking-button {
     
@@ -147,7 +119,7 @@
     font-size: 4.0vw;
     text-align: center;
     font-weight: 700;
-    padding: 0;
+    padding: 20px;
     margin: 0;
 }
 
@@ -189,3 +161,30 @@
     background-color: gray;
 }
 
+.booking-table {
+    table-layout: fixed;
+    width: 1000px;
+    border-spacing: 0.5rem;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.booking-table tr {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: .35em;
+}
+
+.booking-table td, th {
+    border: 1px solid black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0.5em;
+    text-align: left;
+    }
+
+.booking-table td, a {
+    color: black;
+    text-decoration: none;
+
+} 
