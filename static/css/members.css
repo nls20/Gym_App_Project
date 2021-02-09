@@ -98,11 +98,11 @@
 
 .new-member-1 {
     height: auto;
-    width: 1000px;
+    width: 1500px;
     padding: 40px 40px;
     box-sizing: border-box;
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     text-shadow: 0 0 5px black;
     margin-bottom: 40px;
     background-color: rgba(64, 224, 208, 0.26); 
@@ -111,6 +111,7 @@
 
 .new-member-1-last {
     background-color: none;
+    margin-right: 40px;
 }
 
 .add-member h1 {
