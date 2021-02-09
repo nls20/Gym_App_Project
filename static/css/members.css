@@ -31,6 +31,7 @@
     margin-bottom: 0;
 }
 
+/* This Section is for Members Table */
 
 .member-table {
     table-layout: fixed;
@@ -41,7 +42,7 @@
 }
 
 .member-table tr {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.65);
     padding: .35em;
 }
 
