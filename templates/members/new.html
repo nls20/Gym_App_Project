@@ -1,15 +1,19 @@
 {% extends "base.html" %}
 {% block content %}
-
+<div class="add-session">
+  <h1>ADD A MEMBER</h1>
+  </div>
+<div class="new-member-container">
+  <div class="new-member-1">
 <form action="/members" method="post">
-
-  <div>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="name" required autofocus>
+    <label id="member-label-name" for="name">ENTER MEMBER NAME: </label>
+    <input class="member-label" type="text" id="name" name="name" placeholder="name" required autofocus>
   </div>
 
-  <button type="submit">Add New Member</button>
-
+  <div class="new-session-1-last">
+  <button class="new-member-button" type="submit">Add New Member</button>
+</div>
 </form>
+</div>
 
 {% endblock %}

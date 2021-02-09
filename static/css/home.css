@@ -20,7 +20,7 @@
 }
   
 .gym-text h1 {
-    font-size: 4.5vw;
+    font-size: 5.0vw;
     font-weight: 600;
     text-align: center;
     color: black;
@@ -29,9 +29,9 @@
   }
   
 .gym-text p {
-    font-size: 2.5vw;
+    font-size: 3.0vw;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
     line-height: .5;
     color: black;
     margin-bottom: 5;

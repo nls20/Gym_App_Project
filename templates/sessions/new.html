@@ -1,33 +1,33 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="add-session">
-  <h1>Add a Session</h1>
+  <h1>ADD A SESSION</h1>
   </div>
 <div class="new-session-container">
   <div class="new-session-1">
 <form action="/sessions" method="post">
-    <label for="name">Name:</label>
+    <label for="name">NAME:</label>
     <input class="session-select" id="member-name" type="text" id="name" name="name" placeholder="name" required autofocus>
   </div>
 
   <div class="new-session-1">
-    <label for="category">Category:</label>
+    <label for="category">CATEGORY:</label>
     <input class="session-select" type="text" id="category" name="category" placeholder="category" required autofocus>
   </div>
 
 <div class="new-session-1">
-      <label for="date">Date:</label>
+      <label for="date">DATE:</label>
       <input class="session-label" type="date" id="date" name="date" placeholder="date" required autofocus>
  </div>
 
  <div class="new-session-1">
-    <label for="time">Time:</label>
+    <label for="time">TIME:</label>
     <input class="session-label" type="time" id="time" name="time" placeholder="time" required autofocus>
 </div>
 
 <div class="new-session-1-last">
   <p>
-  <button class="new-session-button" type="submit">Add New Session</button>
+  <button class="new-session-button" type="submit">ADD NEW SESSION</button>
 </p>
 </div>
 

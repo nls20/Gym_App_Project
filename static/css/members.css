@@ -73,7 +73,7 @@
     text-decoration: none;
     justify-self: center;
     align-content: center;
-    border: none;
+    border: 1px solid white;
 }
 
 
@@ -83,4 +83,79 @@
 
 #name {
     width:500px;
+}
+
+.new-member-container {
+    text-align: center;
+    display: grid;
+    grid-template-columns: (4, 3fr);
+    row-gap: 1em;
+    display: flex;
+    column-gap:20px;
+    justify-content: space-evenly;
+    max-width: 2000px;
+}
+
+.new-member-1 {
+    height: auto;
+    width: 1000px;
+    padding: 40px 40px;
+    box-sizing: border-box;
+    font-size: 26px;
+    font-weight: 600;
+    text-shadow: 0 0 5px black;
+    margin-bottom: 40px;
+    background-color: rgba(64, 224, 208, 0.26); 
+    color:white;
+}
+
+.new-member-1-last {
+    background-color: none;
+}
+
+.add-member h1 {
+    color: black;
+    text-shadow: 0 0 3px white;
+    font-size: 4.0vw;
+    text-align: center;
+    font-weight: 700;
+    padding: 20px;
+    margin: 0;
+}
+
+.new-member-button {
+    
+    background-color: #60B99A;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    padding: 10px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 90px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+.new-member-button:hover {
+    background-color: gray;
+}
+
+.member-label {
+    padding: 8px 8px;
+    width: 200px;
+    background-color: white;
+    color:  #60B99A;
+    font-size: 20px;
+    border: darkgray;
+    cursor: text;
+    border-radius: 30px;
+    appearance: none;
+    margin-top: 30px;
+    margin-bottom: auto;
+} 
+
+#member-label-name {
+    font-size: 30px;
 }

@@ -32,12 +32,12 @@
 
 .new-button {
   background-color: #60B99A;
-  border: none;
+  border: 1px solid white;
   color: white;
   font-size: 20px;
   padding: 16px 16px;
   text-decoration: none;
-  margin-left: 420px;
+  margin-left: 410px;
   cursor: pointer;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -104,7 +104,7 @@
 .new-booking-button {
     
     background-color: #60B99A;
-    border: none;
+    border: 1px solid white;;
     color: white;
     font-size: 25px;
     padding: 20px 20px;

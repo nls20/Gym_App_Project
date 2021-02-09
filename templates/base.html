@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Gym</title>
+    <title>THE GYM</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   
@@ -16,10 +16,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
   
 </head>
-<body>
-    <div id="container">
-        <div id="content-wrap">
-    <main>
+<body class="site">
+    <main class="site-content">
     <nav>
         <ul class="main-nav">
             <li class="background-nav">
@@ -39,12 +37,10 @@
     {% block content %}
         
     {% endblock %}
-   </div>
-  
+ 
 </main>
-</div>
-<footer class="container-row">
- <p> © 2021 The Gym in Edinburgh.  All Rights Reserved.</p>
-</footer>
+   <footer> 
+    <p> © 2021 The Gym in Edinburgh.  All Rights Reserved.</p>
+   </footer> 
 </body>
 </html>
