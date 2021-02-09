@@ -175,3 +175,16 @@
 #member-name {
     width: 100px;
 }
+
+.show-session-container{
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    background-color:rgba(64, 224, 208, 0.26);
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    flex-basis: 40%;
+   
+}

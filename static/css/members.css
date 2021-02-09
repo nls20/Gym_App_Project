@@ -27,6 +27,8 @@
     font-size: 4.0vw;
     text-align: center;
     font-weight: 700;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 
@@ -60,9 +62,10 @@
 
 .create-new-member-button {
     margin-bottom: 30px;
+    margin-top: 0;
     background: #60B99A;
     color: #fff;
-    padding: 15px;
+    padding: 20px;
     text-decoration: none;
     font-size: 20px;
     cursor: pointer;
@@ -71,6 +74,7 @@
     align-content: center;
     border: none;
 }
+
 
 .create-new-member-button:hover {
     background-color: gray;
