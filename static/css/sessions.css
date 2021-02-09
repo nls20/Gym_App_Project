@@ -113,26 +113,29 @@
 
 } 
 
-#name {
+.table-header-name {
+   width: 200px;
+}
+
+.table-header-category  {
     width: 200px;
 }
 
-#category {
-    width: 160px;
-}
+.table-header-date {
+    width: 150px;
+} 
 
-#date {
+.table-header-time  {
     width: 150px;
 }
 
-#edit {
-    width: 100px;
+.table-header-edit {
+    width: 80px;
 }
 
-#delete {
-    width: 100px;
+.table-header-delete {
+    width: 80px;
 }
-
 
 .new-session-container {
     display: grid;
@@ -151,24 +154,6 @@
     font-weight: 600;
 }
 
-
-.new-member-button {
-
-    /* background-color: #60B99A;
-    border: none;
-    color: white;
-    font-size: 25px;
-    padding: 20px 20px;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-family: 'Roboto Condensed', sans-serif;
-} */
-
-.new-booking-member:hover {
-/* background-color: gray; */
-}
-
 #member-name {
-    width: 50px;
+    width: 100px;
 }
