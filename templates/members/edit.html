@@ -1,24 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 
-<!-- <form action="/members/{{ member.id }}" method="post">
-
-  <div>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder="name" required autofocus>
+<div class="add-session">
+  <h1>EDIT MEMBER</h1>
   </div>
-
-  <button type="submit">Edit</button>
-
-</form> -->
-
+<div class="new-member-container">
+<div class="new-member-1">
 <form action="/members/{{ member.id }}" method="POST">
     <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" value="{{ member.name }}">
+        <label class="member-label-name" for="name">Name:</label>
+        <input class="member-label" type="text" id="name" name="name" value="{{ member.name }}">
     </div>
-    <div>
-        <input type="submit">
+
+    <div class="new-member-1-last">
+  <button class="new-member-button" type="submit">EDIT</button>
+  </div>
     </div>
 </form>
 {% endblock %}
