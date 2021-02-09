@@ -1,15 +1,20 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    
-<h1> {{ member.name }} </h1>
+<div class="show-session-container">
+    <table class = "session-table">
+        <tr>
+            <th>Member</th>
+            <th>Sessions Booked:</th>
+        </tr>
+        <tr>
+            <td>{{ member.name }}</td>
+            <td>
+                <ul>{% for session in sessions %}
+                    <p>{{ session.name }}</p>
+            {% endfor %}</ul></td>
+        </tr>
 
-<h3>Booked in:</h3>
-
-<ul>
-    {% for session in sessions %}
-        <li>{{ session.name }} </li>
-    {% endfor %}
-</ul>
-
+</div>
+</table>
 {% endblock %}

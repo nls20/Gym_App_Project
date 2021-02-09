@@ -2,12 +2,21 @@
 
 {% block content %}
 <div class="show-session-container">
-<h2> {{session.name }}</h2>
+    <table class = "session-table">
+        <tr>
+            <th>Session</th>
+            <th>Category</th>
+            <th>Members Attending:</th>
+        </tr>
+        <tr>
+            <td>{{session.name }}</td>
+            <td>{{ session.category }}</td>
+           <td> 
+               <ul>{% for member in members %}
+                    <p>{{ member.name }}</p>
+                {% endfor %}</ul></td>
+        </tr>
 
-<p>Category: {{ session.category }}</p>
-
-    {% for member in members %}
-    <p>Members Attending: {{ member.name }}</p>
-    {% endfor %}
 </div>
+</table>
 {% endblock %}

@@ -91,6 +91,8 @@
     border-spacing: 0.5rem;
     border-collapse: collapse;
     text-align: left;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 .session-table tr {
@@ -188,3 +190,4 @@
     flex-basis: 40%;
    
 }
+
