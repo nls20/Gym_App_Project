@@ -4,4 +4,5 @@ footer {
   flex-shrink: 0;
   background-color: #60B99A;
   color: white;
+  margin-bottom: 0;
 }
