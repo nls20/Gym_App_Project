@@ -39,7 +39,7 @@
   font-size: 20px;
   padding: 16px 16px;
   text-decoration: none;
-  margin-left: 410px;
+  margin-left: 650px;
   cursor: pointer;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -87,7 +87,7 @@
  
 .new-booking-1 {
     height: auto;
-    padding: 20px 20px;
+    padding: 40px 20px;
     box-sizing: border-box;
     font-size: 26px;
     font-weight: 600;
@@ -114,6 +114,7 @@
     margin: 4px 2px;
     cursor: pointer;
     font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 900px;
 } 
 
 .new-booking-button:hover {
@@ -150,24 +151,22 @@
     padding-right: 30px;
 }
 
-.booking-select:hover {
-    background-color: gray;
-}
-
-/* .booking-label {
+.date-time-select {
     padding: 8px 8px;
     background-color: white;
     color:  #60B99A;
     font-size: 20px;
-    border-radius: 10px;
-    margin-top: 30px;
     border: darkgray;
     cursor: pointer;
     border-radius: 20px;
-    appearance: none;
     margin-top: 15%;
     margin-bottom: 15%;
-}  */
+    appearance: none;
+}
+
+.booking-select:hover {
+    background-color: gray;
+}
 
 .booking-label:hover {
     background-color: gray;
@@ -177,7 +176,7 @@
 
 .booking-table {
     table-layout: fixed;
-    width: 1000px;
+    width: 1500px;
     border-spacing: 0.5rem;
     border-collapse: collapse;
     text-align: left;
@@ -201,3 +200,5 @@
     color: black;
     text-decoration: none;
 }
+
+

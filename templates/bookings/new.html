@@ -27,22 +27,17 @@
 
     <div class="new-booking-1">
      <label for="date">SELECT DATE:</label>
-        <select class="booking-select" name="session_id" id="session">
-            {% for session in sessions %}
-                <option value="{{ session.id }}">{{ session.date }}</option>
-            {% endfor %}
-        </select>
+            <input class = "date-time-select" type="date" id="date" name="date" required autofocus>
    </div>
    
   
    <div class="new-booking-1">
       <label for="time">SELECT TIME:</label>
-        <select class="booking-select" name="session_id" id="session">
-            {% for session in sessions %}
-                <option value="{{ session.id }}">{{ session.time }}</option>
-            {% endfor %}
-        </select>
+        <input class = "date-time-select" type="time" id="time" name="time" required autofocus>
+        </div>
     </div>
+
+
 
     
    <div class="new-booking-1-last">
