@@ -1,3 +1,5 @@
+/* CSS for creating members page */
+
 .members-container {
     max-width: 1300px;
     margin: 40px auto 0 auto;
@@ -76,14 +78,16 @@
     border: 1px solid white;
 }
 
-
 .create-new-member-button:hover {
     background-color: gray;
 }
 
+
 #name {
     width:500px;
 }
+
+/* CSS for new member form */
 
 .new-member-container {
     text-align: center;

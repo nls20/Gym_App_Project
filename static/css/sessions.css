@@ -153,6 +153,7 @@
     max-width: 2000px;
 }
 
+/* CSS for ADD a Session Page  */
 
 .new-session-1 {
     height: auto;
@@ -250,6 +251,8 @@
     flex-basis: 40%;
    
 }
+
+/* CSS for Edit Session Page */
 
 .edit-session-container {
     text-align: center;
