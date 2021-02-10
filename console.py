@@ -12,20 +12,32 @@ booking_repository.delete_all()
 member_repository.delete_all()
 session_repository.delete_all()
 
-member1 = Member('Jarron Green')
+member1 = Member('Jan Metelski')
 member_repository.save(member1)
 
-member2 = Member('Adam Simpson')
+member2 = Member('Brian Bell')
 member_repository.save(member2)
 
-member3 = Member('Louise Henderson')
+member3 = Member('Alex Rabisse')
 member_repository.save(member3)
 
-member4 = Member('Anna Reid')
+member4 = Member('Andrew Hunter')
 member_repository.save(member4)
 
-member5 = Member('Ellie Jones')
+member5 = Member('David Taylor')
 member_repository.save(member5)
+
+member6 = Member('James Beedle')
+member_repository.save(member6)
+
+member7 = Member('Jenny Bulford')
+member_repository.save(member7)
+
+member8 = Member('Mark Burns')
+member_repository.save(member8)
+
+member9 = Member('Simon Elmslie')
+member_repository.save(member9)
 
 session1 = Session('Lower Body HIIT', 'Cardio', '2021-01-14', '06:00:00')
 session_repository.save(session1)
@@ -50,7 +62,7 @@ booking_repository.save(booking2)
 
 print(member_repository.sessions(member1))
 print(session_repository.members(session1))
-member1.name='Malcolm'
-member_repository.update(member1)
+# member1.name='Malcolm'
+# member_repository.update(member1)
 
 pdb.set_trace()
