@@ -25,3 +25,22 @@
     background-color: gray;
 }
   
+#home {
+    width:200px;
+    text-align: center;
+}
+
+#sessions {
+    width:200px;
+    text-align: center;
+}
+
+#members {
+    width: 200px;
+    text-align: center;
+}
+
+#bookings {
+    width: 200px;
+    text-align: center;
+}
