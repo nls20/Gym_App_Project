@@ -9,37 +9,46 @@
 <div class="new-booking-1">
 <form action="/bookings" method="post">
     <label for="member">SELECT MEMBER:</label>
-     <select class="booking-select" name="member_id" id="member">
-         {% for member in members %}
-            <option value="{{ member.id }}">{{ member.name }}</option>
-         {% endfor %}
-     </select>
+        <select class="booking-select" name="member_id" id="member">
+            {% for member in members %}
+                <option value="{{ member.id }}">{{ member.name }}</option>
+            {% endfor %}
+        </select>
     </div>
 
     <div class="new-booking-1">
-     <label for="session">SELECT SESSION:</label>
-     <select class="booking-select" name="session_id" id="session">
-         {% for session in sessions %}
-            <option value="{{ session.id }}">{{ session.name }}</option>
-         {% endfor %}
-     </select>
+    <label for="session">SELECT SESSION:</label>
+        <select class="booking-select" name="session_id" id="session">
+            {% for session in sessions %}
+                <option value="{{ session.id }}">{{ session.name }}</option>
+            {% endfor %}
+        </select>
     </div>
 
     <div class="new-booking-1">
      <label for="date">SELECT DATE:</label>
-    <input class="booking-label" type="date" id="date" name="date" value="{{ session.date }}">
-    </div>
+        <select class="booking-select" name="session_id" id="session">
+            {% for session in sessions %}
+                <option value="{{ session.id }}">{{ session.date }}</option>
+            {% endfor %}
+        </select>
+   </div>
    
   
    <div class="new-booking-1">
       <label for="time">SELECT TIME:</label>
-      <input class="booking-label" type="time" id="time" name="time" value="{{ session.time }}">
+        <select class="booking-select" name="session_id" id="session">
+            {% for session in sessions %}
+                <option value="{{ session.id }}">{{ session.time }}</option>
+            {% endfor %}
+        </select>
     </div>
 
     
    <div class="new-booking-1-last">
-     <p id="no-border"><button class="new-booking-button" type='submit' value="Submit">Submit</button></p>
-</div>
+     <button class="new-booking-button" type='submit'>Submit</button>
+  </div>
+
 </form>
 </div>
 

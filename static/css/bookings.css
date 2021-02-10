@@ -1,3 +1,5 @@
+/* CSS for create bookings page */
+
 .bookings-container {
     position:relative;
     display: flex;
@@ -72,7 +74,7 @@
     
 
 .new-booking-container {
-        max-width: 2000px; 
+        max-width: 2000px;
         text-align: center;
         display: grid;
         grid-template-columns: (4, 3fr);
@@ -85,8 +87,7 @@
  
 .new-booking-1 {
     height: auto;
-    width: 500px;
-    padding: 40px 40px;
+    padding: 20px 20px;
     box-sizing: border-box;
     font-size: 26px;
     font-weight: 600;
@@ -94,6 +95,7 @@
     margin-bottom: 40px;
     background-color: rgba(64, 224, 208, 0.26); 
     color:white;
+    width: 300px;
 }
 
 .new-booking-1-last {
@@ -112,11 +114,11 @@
     margin: 4px 2px;
     cursor: pointer;
     font-family: 'Roboto Condensed', sans-serif;
-}
+} 
 
 .new-booking-button:hover {
     background-color: gray;
-}
+} 
 
 .add-booking h1 {
     color: black;
@@ -146,16 +148,14 @@
     background-repeat: no-repeat;
     background-size: 10px;
     padding-right: 30px;
-    width: 200px;
 }
 
 .booking-select:hover {
     background-color: gray;
 }
 
-.booking-label {
+/* .booking-label {
     padding: 8px 8px;
-    width: 200px;
     background-color: white;
     color:  #60B99A;
     font-size: 20px;
@@ -167,7 +167,7 @@
     appearance: none;
     margin-top: 15%;
     margin-bottom: 15%;
-} 
+}  */
 
 .booking-label:hover {
     background-color: gray;
