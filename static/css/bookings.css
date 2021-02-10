@@ -56,7 +56,7 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.new-button:hover {
+.new-button-delete:hover {
     background-color: gray;
 }
 
