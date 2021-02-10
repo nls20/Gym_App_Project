@@ -1,4 +1,4 @@
-/* CSS for create bookings page */
+/* CSS for displaying all bookings page and create new booking button */
 
 .bookings-container {
     position:relative;
@@ -72,6 +72,7 @@
     cursor: pointer; 
 }
     
+/* CSS for Adding a Booking Page and Add New Booking Button */
 
 .new-booking-container {
         max-width: 2000px;

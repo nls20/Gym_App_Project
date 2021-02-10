@@ -27,7 +27,8 @@
         <td><a href="/sessions/{{ session.id }}/edit"><button class ="create-session-button-small">Edit</button></a></td>
         <td><form action="/sessions/{{ session.id }}/delete" method="POST">
             <input class="create-session-button-small" type="submit" value="Delete">
-        </form></td>
+            </form>
+        </td>
     </tr>
     {% endfor %}
    

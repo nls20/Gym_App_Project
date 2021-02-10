@@ -4,23 +4,23 @@
     <h1>EDIT SESSION</h1>
 </div>
 <div class="edit-session-container">
-  <div class="edit-session-1">
-      <form action="/sessions/{{session.id}}" method="POST">
+<div class="edit-session-1">
+<form action="/sessions/{{session.id}}" method="POST">
         <label for="name">NAME:</label>
         <input class="session-edit-select" type="text" id="name" name="name" value="{{ session.name }}">
     </div>
     
-      <div class="edit-session-1">
+    <div class="edit-session-1">
         <label for="category">CATEGORY:</label>
         <input type="text" id="category" name="category" class ="session-edit-select" value="{{ session.category }}">
-      </div>
+    </div>
     
-      <div class="edit-session-1">
-          <label for="date">DATE:</label>
-          <input class="session-edit-label" type="date" id="date" name="date" value="{{ session.date }}">
-      </div>
+    <div class="edit-session-1">
+        <label for="date">DATE:</label>
+        <input class="session-edit-label" type="date" id="date" name="date" value="{{ session.date }}">
+   </div>
     
-      <div class="edit-session-1">
+    <div class="edit-session-1">
         <label for="time">TIME:</label>
         <input class="session-edit-label" type="time" id="time" name="time" value="{{ session.time }}">
     </div>

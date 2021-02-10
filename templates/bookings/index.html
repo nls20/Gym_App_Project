@@ -9,14 +9,14 @@
     <a href="/bookings/new"><button class="new-button">CREATE NEW SESSION</button></a>
 </p>
 </div>
-<table class="booking-table">
-    <tr>
-        <th class="table-header-name">NAME</th>
-        <th class="table-header-category">SESSION</th>
-        <th class="table-header-date">DATE</th>
-        <th class="table-header-time">TIME</th>
-        <th class="table-header-delete"></th>
-    </tr>
+    <table class="booking-table">
+        <tr>
+            <th class="table-header-name">NAME</th>
+            <th class="table-header-category">SESSION</th>
+            <th class="table-header-date">DATE</th>
+            <th class="table-header-time">TIME</th>
+            <th class="table-header-delete"></th>
+        </tr>
     {% for booking in bookings %}
     <tr>
         <td>{{booking.member.name }} </td>
