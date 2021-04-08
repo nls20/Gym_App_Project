@@ -2,3 +2,5 @@ Python web application which allows a gym to manage memberships and register mem
 
 ![gymapp](https://user-images.githubusercontent.com/75388411/113846638-9a037480-978e-11eb-9183-8b230047b02f.png)
 
+![sessions](https://user-images.githubusercontent.com/75388411/114041775-bb428e80-987c-11eb-8d2e-93fa59ad32de.png)
+
